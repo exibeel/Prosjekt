@@ -5,3 +5,5 @@ Kaker og bananer
 bæsj
 
 hei igjen
+
+Jævla kuk
