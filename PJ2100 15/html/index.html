@@ -20,22 +20,22 @@
 			</div>
 		</div>
 		<!--Main Body-->
-		<div id="titleBody">
-			<div id="searchWinTitles">
-				<p class="winTitles">Søk etter ledig rom:</p>
-				<p class="winTitles">Klokkeslett:</p>
-				<p class="winTitles">Dato:</p>
-				<p class="winTitles">Antall pers:</p>
-				<p class="winTitles">Prosjektor:</p>
-			</div>
-		</div>
 		<div id="mainBody">
 			<div id="searchWin">
-				<div id="timeFrom"></div>
-				<div id="timeTo"></div>
-				<div id="date"></div>
-				<div id="numOfPeople"></div>
-				<div id="yesNo"></div>
+				<div id="searchTitle">Søk etter ledig rom:</div>
+				<form id="searchDetails">
+					Legg inn klokkeslett: </tab>
+					<input type="timeFrom" size="3" maxlength=""> - <input type="timeTo" size="3" maxlength=""></br></br>
+
+					Legg inn dato:
+					<input type="date" size="3" maxlength="8"></br></br>
+
+					Prosjektor Ja eller Nei:
+					<input type="text" size="3" maxlength= "3"></br></br>
+
+					Antall personer:
+					<input type="text" size="1" maxlength= "1">
+				</form>
 				<div id="searchButton">
 					<div id="wordHolder2"><p class="buttonText">Søk</p></div>
 				</div>
