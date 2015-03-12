@@ -1,69 +1,9 @@
 /* CSS index */
-ul {
-  text-align: left;
-  display: inline;
-  margin: 0;
-  padding: 15px 4px 17px 0;
-  list-style: none;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
-ul li {
-  font: bold 12px/18px sans-serif;
-  display: inline-block;
-  margin-right: -4px;
-  position: relative;
-  padding: 15px 20px;
-  background: #fff;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-ul li:hover {
-  background: #555;
-  color: #fff;
-}
-ul li ul {
-  padding: 0;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 150px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transiton: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
-}
-ul li ul li { 
-  background: #555; 
-  display: block; 
-  color: #fff;
-  text-shadow: 0 -1px 0 #000;
-}
-ul li ul li:hover { background: #666; }
-ul li:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
+/* -- CLASSES -- */
 p.buttonText{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	color: rgb(255,255,255);
-}
-p.winTitles{
-	margin-left: 30px;
 }
 body{
 	background-color: rgb(240,240,240);
@@ -111,6 +51,9 @@ body{
 	background-color: rgb(97,175,202);
 	box-shadow: 0px 1px 0px 0px rgb(90,90,90);
 }
+#logInOutButton:hover{
+	background-color: rgb(67,145,172);
+}
 #wordHolder1{
 	position:absolute;
 	left: 22px;
@@ -138,7 +81,6 @@ body{
 	height: 270px;
 	z-index: 2;
 }
-/* --DROP DOWN MENU BUTTONS--MB*/
 #searchWin{
 	position: relative;
 	top: 30px;
@@ -153,15 +95,16 @@ body{
 #searchTitle{
 	position: absolute;
 	top: 0px;
-	margin: 20px;
+	margin-top: 20px;
+	margin-left: 58px;
 	font-size: 20px;
 	font-weight: bold;
 }
 #searchDetails{
 	position: absolute;
 	font-size: 14px;
-	top: 50px;
-	margin: 20px;
+	top: 60px;
+	margin: 30px;
 }
 #searchButton{
 	position: absolute;
@@ -173,14 +116,17 @@ body{
 	border-radius: 3px;
 	box-shadow: 0px 1px 0px 0px rgb(90,90,90);
 }
+#searchButton:hover{
+	background-color: rgb(62,154,62);
+}
 #wordHolder2{
 	position:absolute;
 	left: 49px;
-	top: -15px
+	top: -14px
 }
 #manualButton{
 	position: absolute;
-	left: 155;
+	left: 155px;
 	top: 300px;
 	width: 130px;
 	height: 35px;
@@ -188,10 +134,13 @@ body{
 	border-radius: 3px;
 	box-shadow: 0px 1px 0px 0px rgb(90,90,90);
 }
+#manualButton:hover{
+	background-color: rgb(62,154,62);
+}
 #wordHolder3{
 	position:absolute;
-	left: 15px;
-	top: -15px
+	left: 11px;
+	top: -14px
 }
 #helpWin{
 }
