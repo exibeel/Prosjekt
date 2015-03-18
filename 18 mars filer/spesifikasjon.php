@@ -12,6 +12,11 @@
 					<input id="logOutButton" type = "submit" value = "Logg ut"/>
 				</form>
 			</div>
+			<div id="leftTopAlign">
+				<form action ="main.php" action ="main.php" method ="POST">
+					<input id="homeButton" type = "submit" value = "Hjem"/>
+				</form>
+			</div>
 		</div>
 		<div id="header">
 			<div id="logoBox">
@@ -31,14 +36,14 @@
 			<div id="cutLine" class="cutLine"></div>
 			<h3 id="spesTitle">Spesifikasjoner</h3>
 				<p id="spesInfo">
-				Trykk på de forskjellige instillingene, og
+				Trykk på de forskjellige innstillingene, og
 				så på søkeknappen under for å gå til neste steg.</p>
 			<div id="x">
 				<form action="success.php" method="POST">
-					Dato: <input type="date" name="dato"/></br>
+					Dato: <input type="date" name="dato" id="datoHolder" value="<?php echo date('Y-m-d'); ?>" /></br>
 					<p>
 					Velg kapasitet (2-4):
-					<select name="kapasitet">
+					<select name="kapasitet" id="kapasitetHolder">
   					<option value="2">2</option>
  					<option value="3">3</option>
  					<option value="4">4</option>
@@ -54,6 +59,9 @@
    					<input type="submit" name="formSubmit" id="searchButton" value="Søk"/>
 				</form>
 			</div>
+		</div>
+		<div id="backgroundHolder">
+			<img id="backgroundPic" src="background_d.png"></img>
 		</div>
 		<div id="footer">
 			<div id="footerNoteHolder">

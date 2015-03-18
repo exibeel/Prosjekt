@@ -1,3 +1,4 @@
+<!--http://www.skyscrapercity.com/showthread.php?p=116942618-->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -5,7 +6,7 @@
 		<meta charset="utf-8">
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
 	</head>
-	<body>
+	<body>		
 		<!--Top Bar-->
 		<div id="header">
 			<div id="logoBox">
@@ -25,6 +26,9 @@
 			fortsette videre til 3 steg-prosessen for å bestille rom.</p>
 			<a id="startClick" href="login.php">Klikk Her For Å Begynne</a>
 			<a id="startButton" href="login.php"></a>
+		</div>
+		<div id="backgroundHolder">
+			<img id="backgroundPic" src="background_d.png"></img>
 		</div>
 		<footer>
 			<div id="footer">

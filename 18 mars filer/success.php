@@ -12,6 +12,11 @@
 					<input id="logOutButton" type = "submit" value = "Logg ut"/>
 				</form>
 			</div>
+			<div id="leftTopAlign">
+				<form action ="main.php" action ="main.php" method ="POST">
+					<input id="homeButton" type = "submit" value = "Hjem"/>
+				</form>
+			</div>
 		</div>
 		<div id="header">
 			<div id="logoBox">
@@ -28,10 +33,6 @@
 				<div id="c2" class="inactiveCircle"></div>
 				<div id="c3" class="activeCircle"></div>
 			</div>
-			<div id="linePat1" class="linePatGray"></div>
-			<div id="linePat2" class="linePatWhite"></div>
-			<div id="linePat3" class="linePatGray"></div>
-			<div id="linePat4" class="linePatWhite"></div>
 			<h3 id="foundTitle">Rom</h3>
 				<p id="foundInfo">
 				Trykk på "Bestill Rom"-knappen ved siden av et av 
@@ -113,6 +114,9 @@ $q->setFetchMode(PDO::FETCH_ASSOC);
 <?php endwhile; ?>
 
 			</div>
+		</div>
+		<div id="backgroundHolder">
+			<img id="backgroundPic" src="background_d.png"></img>
 		</div>
 		<div id="footer">
 			<div id="footerNoteHolder">
