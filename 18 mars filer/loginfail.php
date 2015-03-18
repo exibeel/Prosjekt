@@ -7,6 +7,13 @@
 	</head>
 	<body>
 		<!--Top Bar-->
+		<div id="invisBanner2">
+			<div id="leftTopAlign">
+				<form action ="main.php" action ="main.php" method ="POST">
+					<input id="homeButton" type = "submit" value = "Hjem"/>
+				</form>
+			</div>
+		</div>
 		<div id="header">
 			<div id="logoBox">
 				<img id="logo" src="westerdals_logo_2.png"></img>
@@ -29,8 +36,8 @@
 				Skriv inn brukernavn, passord og trykk på logg inn for å 
 				gå til neste steg.</p>
 				<form action="loginscript.php" method="POST">
-					Brukernavn: <input type="text" name="brukernavn"/></br></br>
-					Passord: <input type="password" name="passord"/></br></br>
+					Brukernavn: <input type="text" id="userHolder" name="brukernavn" placeholder="Skriv inn her.."/></br></br>
+					Passord: <input type="password" id="passHolder" name="passord" placeholder="Skriv inn her.."/></br></br>
 					<p id="loginfail">
 					Ugyldig brukernavn eller passord.</p>
 					<input id="loginButton" type="submit" value="Logg Inn"/>

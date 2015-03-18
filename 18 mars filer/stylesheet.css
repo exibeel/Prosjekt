@@ -268,7 +268,7 @@ div.cutLine{
 	position: relative;
 	width: 380px; 
 	height: 60px; 
-	top: 2px; 
+	top: 8px; 
 	color: #FFF; 
 	font-size: 24px; 
 	background-color: rgb(92,184,92); 
@@ -284,7 +284,7 @@ div.cutLine{
 	position: relative; 
 	width: 380px; 
 	height: 60px; 
-	top: 14px; 
+	top: 17px; 
 	color: #FFF; 
 	font-size: 24px; 
 	background-color: rgb(97,175,202); 
@@ -316,6 +316,11 @@ div.cutLine{
 	position: absolute;
 	left: 86px;
 	top: 34px;
+}
+#loginfail{
+	position: absolute;
+	top: 42px;
+	left: 0px;
 }
 /* -------registrering.php--BODY-------*/
 #registeringWin{
