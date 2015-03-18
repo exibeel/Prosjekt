@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
-		<title>Logg Inn</title>
+		<title>CK34 - Logg Inn</title>
 		<meta charset="utf-8">
 	</head>
 	<body>
@@ -38,8 +38,10 @@
 				</form>
 			</div>
 		</div>
-		<footer>
-			<div id="footer"></div>
-		</footer>
+		<div id="footer">
+			<div id="footerNoteHolder">
+				<p id="footerNote">booking CK34(0.8) Copyright © 2015 | All rights reserved</p>
+			</div>
+		</div>
 	</body>
 </html>

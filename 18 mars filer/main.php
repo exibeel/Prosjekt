@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Velkommen!</title>
+		<title>CK34 - Hjem</title>
 		<meta charset="utf-8">
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
 	</head>
@@ -27,7 +27,11 @@
 			<a id="startButton" href="login.php"></a>
 		</div>
 		<footer>
-			<div id="footer"><div>
+			<div id="footer">
+				<div id="footerNoteHolder">
+					<p id="footerNote">booking CK34(0.8) Copyright © 2015 | All rights reserved</p>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>

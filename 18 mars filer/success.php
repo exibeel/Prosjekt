@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
-		<title>Spesifikasjoner</title>
+		<title>CK34 - Rom</title>
 		<meta charset="utf-8">
 	</head>
 	<body>
@@ -32,7 +32,6 @@
 			<div id="linePat2" class="linePatWhite"></div>
 			<div id="linePat3" class="linePatGray"></div>
 			<div id="linePat4" class="linePatWhite"></div>
-			<!--<div id="linePat5" class="linePatGray"></div>-->
 			<h3 id="foundTitle">Rom</h3>
 				<p id="foundInfo">
 				Trykk på "Bestill Rom"-knappen ved siden av et av 
@@ -115,8 +114,10 @@ $q->setFetchMode(PDO::FETCH_ASSOC);
 
 			</div>
 		</div>
-		<footer>
-			<div id="footer"></div>
-		</footer>
+		<div id="footer">
+			<div id="footerNoteHolder">
+				<p id="footerNote">booking CK34(0.8) Copyright © 2015 | All rights reserved</p>
+			</div>
+		</div>
 	</body>
 </html>
