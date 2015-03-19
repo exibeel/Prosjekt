@@ -17,7 +17,7 @@ include 'connection.php';
 $kapasitet = $_POST['kapasitet'];
 $prosjektor = $_POST['harProsjektor'];
 
-$x = $dbTilkobling->prepare("SELECT * ");
+$x = $dbTilkobling->prepare("SELECT * FROM rom WHERE kapasitet = ? AND harProsjektor = ? AND status = 'ledig'");
 $x->bindParam(1, $kapasitet);
 $x->bindParam(2, $prosjektor);
 $x->execute();
@@ -27,16 +27,5 @@ if($y > 0){
 }
 else {
 	echo "Ugyldig verdier";
-}
-
-$sql = 'SELECT * FROM rom WHERE harProsjektor="ja"';
-
-$q = $dbTilkobling->query($sql);
-$q->setFetchMode(PDO::FETCH_ASSOC);
-while ($r = $q->fetch()){
-	 echo ($r['romnummer']);
-	 echo ($r['kapasitet']);
-	 echo ($r['status']);
-	 echo ($r['harProsjektor']);
 }
 ?>

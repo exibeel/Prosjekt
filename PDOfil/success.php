@@ -15,7 +15,7 @@
 		</div>
 		<div id="header">
 			<div id="logoBox">
-				<img id="logo" src="westerdals_logo_2.png"></img>
+				<!--<img id="logo" src="westerdals_logo_2.png"></img>-->
 			</div>
 		</div>
 		<!--Main Body-->
@@ -32,7 +32,7 @@
 <?php
 include 'connection.php';
 
-$sql = 'SELECT * FROM rom WHERE status="ledig"';
+$sql = 'SELECT * FROM rom WHERE status="ledig" AND kapasitet="2"';
 
 $q = $dbTilkobling->query($sql);
 $q->setFetchMode(PDO::FETCH_ASSOC);
