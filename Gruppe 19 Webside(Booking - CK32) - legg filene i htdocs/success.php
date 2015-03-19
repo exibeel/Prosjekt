@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
-		<title>CK34 - Rom</title>
+		<title>CK32 - Rom</title>
 		<meta charset="utf-8">
 	</head>
 	<body>
@@ -33,61 +33,54 @@
 				<div id="c2" class="inactiveCircle"></div>
 				<div id="c3" class="activeCircle"></div>
 			</div>
+			<div id="linePat1" class="linePatGray"></div>
+			<div id="linePat2" class="linePatWhite"></div>
+			<div id="linePat3" class="linePatGray"></div>
+			<div id="linePat4" class="linePatWhite"></div>
 			<h3 id="foundTitle">Rom</h3>
 				<p id="foundInfo">
 				Trykk på "Bestill Rom"-knappen ved siden av et av 
 				alternativene nedenfor for å fullføre bestillingen din.</p>
 				<div id="cutLine" class="cutLine"></div>
+				<div id="catDiv"><p id="topics"> Nr |  Kapasitet  |  Status  |  Prosjektor    |</p></div>
 			<div id="foundHolder">
 <?php
 
 include 'connection.php';
 
-	if(isset($_POST['harProsjektor']) && 
-		$_POST['harProsjektor'] == 'Ja')	
-	if(isset($_POST['kapasitet']) &&
-		$_POST['kapasitet'] == '2') 
+	if(isset($_POST['harProsjektor']) && $_POST['harProsjektor'] == 'Ja')	
+	if(isset($_POST['kapasitet']) && $_POST['kapasitet'] == '2') 
 	{
     $sql = 'SELECT * FROM rom WHERE status="ledig" AND harProsjektor="Ja" AND kapasitet = "2"';
 	}
 
-	if(isset($_POST['harProsjektor']) && 
-		$_POST['harProsjektor'] == 'Ja')	
-	if(isset($_POST['kapasitet']) &&
-		$_POST['kapasitet'] == '3') 
+	if(isset($_POST['harProsjektor']) && $_POST['harProsjektor'] == 'Ja')	
+	if(isset($_POST['kapasitet']) && $_POST['kapasitet'] == '3') 
 	{
     $sql = 'SELECT * FROM rom WHERE status="ledig" AND harProsjektor="Ja" AND kapasitet = "3"';
 	}
 
 
-	if(isset($_POST['harProsjektor']) && 
-		$_POST['harProsjektor'] == 'Ja')	
-	if(isset($_POST['kapasitet']) &&
-		$_POST['kapasitet'] == '4') 
+	if(isset($_POST['harProsjektor']) && $_POST['harProsjektor'] == 'Ja')	
+	if(isset($_POST['kapasitet']) && $_POST['kapasitet'] == '4') 
 	{
     $sql = 'SELECT * FROM rom WHERE status="ledig" AND harProsjektor="Ja" AND kapasitet = "4"';
 
 	}
-	if(isset($_POST['harProsjektor']) &&
-		$_POST['harProsjektor'] == 'Nei')
-	if(isset($_POST['kapasitet']) &&
-		$_POST['kapasitet'] == '2')
+	if(isset($_POST['harProsjektor']) && $_POST['harProsjektor'] == 'Nei')
+	if(isset($_POST['kapasitet']) && $_POST['kapasitet'] == '2')
 	{
     $sql = 'SELECT * FROM rom WHERE status="ledig" AND harProsjektor="Nei" AND kapasitet ="2"';
 	}
 
-	if(isset($_POST['harProsjektor']) &&
-		$_POST['harProsjektor'] == 'Nei')
-	if(isset($_POST['kapasitet']) &&
-		$_POST['kapasitet'] == '3')
+	if(isset($_POST['harProsjektor']) && $_POST['harProsjektor'] == 'Nei')
+	if(isset($_POST['kapasitet']) && $_POST['kapasitet'] == '3')
 	{
     $sql = 'SELECT * FROM rom WHERE status="ledig" AND harProsjektor="Nei" AND kapasitet ="3"';
 	}
 
-	if(isset($_POST['harProsjektor']) &&
-		$_POST['harProsjektor'] == 'Nei')
-	if(isset($_POST['kapasitet']) &&
-		$_POST['kapasitet'] == '4')
+	if(isset($_POST['harProsjektor']) && $_POST['harProsjektor'] == 'Nei')
+	if(isset($_POST['kapasitet']) && $_POST['kapasitet'] == '4')
 	{
     $sql = 'SELECT * FROM rom WHERE status="ledig" AND harProsjektor="Nei" AND kapasitet ="4"';
 	}
@@ -98,30 +91,29 @@ $q->setFetchMode(PDO::FETCH_ASSOC);
 
 <?php while ($r = $q->fetch()): ?>
 
-	<table border="1">
+	<div id="successTable" border="1" cellpadding="0">
 		<tr>
-			<td><?php echo ($r['romnummer']) ?></td>
-			<td><?php echo ($r['kapasitet']) ?></td>
-			<td><?php echo ($r['status']); ?></td>
-			<td><?php echo ($r['harProsjektor']); ?></td>
+			<div class="sideDiv1"><?php echo ($r['romnummer']) ?></div>
+			<div class="sideDiv2"><?php echo ($r['kapasitet']) ?></div>
+			<div class="sideDiv3"><?php echo ($r['status']); ?></div>
+			<div class="sideDiv4"><?php echo ($r['harProsjektor']); ?></div>
 		</tr>
-	</table>
+	</div>
 <div id = "bookHolder">
-	<form action="bookingscript.php" method="POST">
-		<input type="submit" id="bookButton" name="book" value="Bestill Rom <?php echo ($r['romnummer'])?>"/>
+	<form action="booked.php" method="POST">
+		<input type="submit" id="bookButton" name="book" value="<?php echo ($r['romnummer'])?>"/>
 	</form>
 </div>
-<?php endwhile; ?>
 
+<?php endwhile; ?>
 			</div>
 		</div>
 		<div id="backgroundHolder">
 			<img id="backgroundPic" src="background_d.png"></img>
 		</div>
-		<!--Bottom Bar-->
 		<div id="footer">
 			<div id="footerNoteHolder">
-				<p id="footerNote">booking CK34(0.8) Copyright © 2015 | All rights reserved</p>
+				<p id="footerNote">Booking CK32(0.9) Copyright © 2015 | All rights reserved</p>
 			</div>
 		</div>
 	</body>

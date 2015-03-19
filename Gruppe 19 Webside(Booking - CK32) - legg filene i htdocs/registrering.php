@@ -2,7 +2,7 @@
 <html> 
 	<head>
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
-		<title>CK34 - Registrere Ny Bruker</title>
+		<title>CK32 - Registrere Ny Bruker</title>
 		<meta charset="utf-8">
 	</head>
 	<body>
@@ -32,10 +32,9 @@
 			</div>
 				<div id="cutLine" class="cutLine"></div>
 				<div id="registeringHolder"> 
-				<h3 id="regTitle">Registrering Fullført</h3>
+				<h3 id="regTitle">Registrering</h3>
 				<p id="regInfo">
-				Brukerenkontoen din er nå registrert. Du kan nå
-				logge inn for å bestille rom.</p> 
+				Fyll inn feltene nedenfor med relevant informasjon.</p> 
 					<form method="POST" action="connect.php"> 
 					StudentID:<input type="text" id="regField1" name="studID" placeholder="Skriv inn her.."></br></br>
 					Brukernavn:<input type="text" id="regField2" name="user" placeholder="Skriv inn her.."></br></br>
@@ -51,7 +50,7 @@
 		<!--Bottom Bar-->
 		<div id="footer">
 			<div id="footerNoteHolder">
-				<p id="footerNote">booking CK34(0.8) Copyright © 2015 | All rights reserved</p>
+				<p id="footerNote">booking CK32(0.9) Copyright © 2015 | All rights reserved</p>
 			</div>
 		</div>
 	</body> 

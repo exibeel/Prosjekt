@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
-		<title>CK34 - Spesifikasjoner</title>
+		<title>CK32 - Spesifikasjoner</title>
 		<meta charset="utf-8">
 	</head>
 	<body>
@@ -66,7 +66,7 @@
 		<!--Bottom Bar-->
 		<div id="footer">
 			<div id="footerNoteHolder">
-				<p id="footerNote">booking CK34(0.8) Copyright © 2015 | All rights reserved</p>
+				<p id="footerNote">booking CK32(0.9) Copyright © 2015 | All rights reserved</p>
 			</div>
 		</div>
 	</body>

@@ -3,7 +3,7 @@
 $db_host = "localhost";
 $db_username = "root";
 $db_pass = "";
-$db_name = "dbnavn";
+$db_name = "booking";
 
 @mysql_connect("$db_host", "$db_username", "$db_pass","$db_name") or die ("Could not connect to MySQL");
 @mysql_select_db("$db_name") or die ("No Database");
@@ -24,7 +24,7 @@ function NyBruker() {
 <html> 
 	<head>
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
-		<title>CK34 - Registrert Bruker!</title>
+		<title>CK32 - Registrert Bruker!</title>
 		<meta charset="utf-8">
 	</head>
 	<body>
@@ -68,7 +68,7 @@ function NyBruker() {
 		<!--Bottom Bar-->
 		<div id="footer">
 			<div id="footerNoteHolder">
-				<p id="footerNote">booking CK34(0.8) Copyright © 2015 | All rights reserved</p>
+				<p id="footerNote">booking CK32(0.9) Copyright © 2015 | All rights reserved</p>
 			</div>
 		</div>
 	</body> 

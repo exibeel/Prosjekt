@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CK34 - Hjem</title>
+		<title>CK32 - Hjem</title>
 		<meta charset="utf-8">
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
 	</head>
@@ -15,12 +15,12 @@
 		</div>
 		<!--Main Body-->
 		<a href="login.php" id="mainLink"><div id="mainWin">
-			<h3 id="mainTitle">Velkommen til CK34 Booking</h3>
+			<h3 id="mainTitle">Velkommen til CK32 Booking</h3>
 			<p id="mainInfo">
 			Hei!
 			
 			Du har kommet til nettsiden som studenter ved Westerdals
-			bruker for å bestille arbeidsrom i Christian Kroghs Gate 34.
+			bruker for å bestille arbeidsrom i Christian Kroghs Gate 32.
 			
 			Om du har en brukerkonto eller studentnummer, kan du 
 			fortsette videre til 3 steg-prosessen for å bestille rom.</p>
@@ -34,7 +34,7 @@
 		<footer>
 			<div id="footer">
 				<div id="footerNoteHolder">
-					<p id="footerNote">booking CK34(0.8) Copyright © 2015 | All rights reserved</p>
+					<p id="footerNote">booking CK32(0.9) Copyright © 2015 | All rights reserved</p>
 				</div>
 			</div>
 		</footer>

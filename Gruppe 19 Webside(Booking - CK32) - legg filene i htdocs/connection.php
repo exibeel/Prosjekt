@@ -1,7 +1,7 @@
 <?php
 //DB variabler
 $dbHost = "localhost";		
-$dbNavn = "dbNavn";
+$dbNavn = "booking";
 $dbBruker = "root";
 $dbPass = "";
 
