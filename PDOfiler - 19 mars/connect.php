@@ -16,7 +16,7 @@ function NyBruker() {
 	$password = $_POST['pass']; 
 	$query = "INSERT INTO users (studentnummer,username,password) VALUES ('$studentID','$userName','$password')"; 
 	$data = mysql_query ($query)or die(mysql_error()); 
-	if($data) { echo "Registrering fullført."; 
+	if($data) { echo ""; 
 }
 }
 ?>
@@ -53,9 +53,10 @@ function NyBruker() {
 			</div>
 			<div id="cutLine" class="cutLine"></div>
 			<div id="registeringHolder"> 
-				<h3 id="regiTitle">Registrering</h3>
+				<h3 id="regiTitle">Registrering Fullført</h3>
 				<p id="regiInfo">
-				Fyll inn feltene nedenfor med relevant informasjon.</p> 
+				Brukerkontoen din er nå registrert. Du kan nå
+				logge inn for å bestille rom.</p> 
 				<form action="login.php" method="POST">
 					<input type="submit" value="Tilbake Til Innlogging" id="regiButton"/>
 				</form>
@@ -71,7 +72,7 @@ function NyBruker() {
 			</div>
 		</div>
 	</body> 
-</html> 
+</html>
 <?php
 	 function Registrer() 
 	 { if(!empty($_POST['user'])) 

@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<!--Main Body-->
-		<a href="login.php"><div id="mainWin">
+		<a href="login.php" id="mainLink"><div id="mainWin">
 			<h3 id="mainTitle">Velkommen til CK34 Booking</h3>
 			<p id="mainInfo">
 			Hei!

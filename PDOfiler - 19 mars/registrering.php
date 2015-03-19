@@ -32,9 +32,10 @@
 			</div>
 				<div id="cutLine" class="cutLine"></div>
 				<div id="registeringHolder"> 
-				<h3 id="regTitle">Registrering</h3>
+				<h3 id="regTitle">Registrering Fullført</h3>
 				<p id="regInfo">
-				Fyll inn feltene nedenfor med relevant informasjon.</p> 
+				Brukerenkontoen din er nå registrert. Du kan nå
+				logge inn for å bestille rom.</p> 
 					<form method="POST" action="connect.php"> 
 					StudentID:<input type="text" id="regField1" name="studID" placeholder="Skriv inn her.."></br></br>
 					Brukernavn:<input type="text" id="regField2" name="user" placeholder="Skriv inn her.."></br></br>
